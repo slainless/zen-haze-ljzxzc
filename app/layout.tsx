@@ -1,8 +1,14 @@
+import { ColorSchemeScript, MantineProvider } from '@mantine/core'
+
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <head />
-      <body>{children}</body>
+    <html lang="en">
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider>{children}</MantineProvider>
+      </body>
     </html>
   )
 }
